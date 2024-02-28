@@ -1,11 +1,12 @@
 public class CanteenDemo {
     public static void main(String[] args) {
-        Item item1 = new Item("Nasi goreng", 15000, 10);
-        Item item2 = new Item("Donat gula", 3000, 20);
-        Item item3 = new Item("Cimory", 7000, 15);
+        Item[] makanan = new Item[3];
 
-        item1.displayInfo();
-        item2.displayInfo();
-        item3.displayInfo();
+        makanan[0] = new Item("Rujak", 8000, 10);
+        makanan[1] = new Item("Es Jeruk", 3000, 20);
+        makanan[2] = new Item("Roti Tawar", 6000, 15);
+
+        Item item = new Item();
+        item.displayInfo(makanan);
     }
 }

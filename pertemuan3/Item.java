@@ -13,9 +13,11 @@ public class Item {
         stock = itemStock;
     }
 
-    public void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Price: " + price);
-        System.out.println("Stock: " + stock);
+    public void displayInfo(Item[] makanan) {
+       for(int i=0; i<makanan.length; i++){
+        System.out.println("Nama makanan : "+makanan[i].name);
+        System.out.println("Harga makanan : "+makanan[i].price);
+        System.out.println("Stok makanan : "+makanan[i].stock);
+       }
     }
 }
