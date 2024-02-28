@@ -3,24 +3,25 @@ import java.util.Scanner;
 public class PersegiPanjangDemo08 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        PersegiPanjang08[] arrayOfPersegiPanjang08 = new PersegiPanjang08[3];
+        int length;
+        System.out.print("Masukkan berapa banyak anda ingin menghitung : ");
+        length = sc.nextInt();
 
-        arrayOfPersegiPanjang08[0] = new PersegiPanjang08();
-        arrayOfPersegiPanjang08[0].panjang = 110;
-        arrayOfPersegiPanjang08[0].lebar = 30;
+        PersegiPanjang08[] arrayOfPersegiPanjang08 = new PersegiPanjang08[length];
+        int panjang, lebar;
 
-        arrayOfPersegiPanjang08[1] = new PersegiPanjang08();
-        arrayOfPersegiPanjang08[1].panjang = 80;
-        arrayOfPersegiPanjang08[1].lebar = 30;
+        for (int i = 0; i < arrayOfPersegiPanjang08.length; i++) {
+            System.out.println("Persegi panjang ke-" + (i + 1));
+            System.out.print("Masukkan panjang: ");
+            panjang = sc.nextInt();
+            System.out.print("Masukkan lebar: ");
+            lebar = sc.nextInt();
 
-        arrayOfPersegiPanjang08[2] = new PersegiPanjang08();
-        arrayOfPersegiPanjang08[2].panjang = 100;
-        arrayOfPersegiPanjang08[2].lebar = 20;
-
-        System.out.println("Persegi panjang ke-1, panjang: " + arrayOfPersegiPanjang08[0].panjang + ", lebar: " + arrayOfPersegiPanjang08[0].lebar);
+            arrayOfPersegiPanjang08[i] = new PersegiPanjang08(panjang, lebar);
+            
+        }
+        PersegiPanjang08 persegiPanjang08 = new PersegiPanjang08();
+        persegiPanjang08.cetakInfo(arrayOfPersegiPanjang08);
         
-        System.out.println("Persegi panjang ke-2, panjang: " + arrayOfPersegiPanjang08[1].panjang + ", lebar: " + arrayOfPersegiPanjang08[1].lebar);
-        
-        System.out.println("Persegi panjang ke-3, panjang: " + arrayOfPersegiPanjang08[2].panjang + ", lebar: " + arrayOfPersegiPanjang08[2].lebar);
     }
 }
