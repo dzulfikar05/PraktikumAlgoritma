@@ -25,7 +25,7 @@ public class Sum08 {
             double rsum = totalDC(arr, mid + 1, r);
             return lsum + rsum; 
         }
-        return 0.0;
+        return 0;
     }
 
 }
