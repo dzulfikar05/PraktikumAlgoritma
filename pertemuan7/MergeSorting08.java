@@ -3,10 +3,6 @@ public class MergeSorting08 {
         sort(data, 0, data.length - 1);
     }
 
-    // private void merge(int data[], int ledt, int middle, int right) {
-
-    // }-
-
     public void merge(int data[], int left, int middle, int right) {
         int[] temp = new int[data.length];
         for (int i = left; i <= right; i++) {

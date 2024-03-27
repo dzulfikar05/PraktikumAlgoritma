@@ -32,26 +32,38 @@ public class MahasiswaMain08 {
         System.out.println("Data keseluruhan Mahasiswa : ");
         data.tampil();
 
+        // System.out.println("---------------------------------------------------------");
+        // System.out.println("---------------------------------------------------------");
+        // System.out.println("Pencarian Data : ");
+        // System.out.println("Masukkan Nim Mahasiswa yang dicari: ");
+        // System.out.print("NIM : ");
+        // int cari = s.nextInt();
+        // System.out.println("menggunakan sequential Search");
+        // int posisi = data.FindSeqSearch(cari);
+
+        // data.Tampilposisi(cari, posisi);
+        // data.TampilData(cari, posisi);
+
+
+
+      
+
         System.out.println("---------------------------------------------------------");
         System.out.println("---------------------------------------------------------");
         System.out.println("Pencarian Data : ");
-        System.out.println("Masukkan Nim Mahasiswa yang dicari: ");
-        System.out.print("NIM : ");
-        int cari = s.nextInt();
-        System.out.println("menggunakan sequential Search");
-        int posisi = data.FindSeqSearch(cari);
-
-        data.Tampilposisi(cari, posisi);
-        data.TampilData(cari, posisi);
-
-
+        System.out.println("Masukkan Nama Mahasiswa yang dicari: ");
+        System.out.print("Nama : ");
+        String cari = s.next();
 
         System.out.println("==========================================================");
         System. out.println("menggunakan binary Search") ;
 
-        posisi = data.FindBinarySearch(cari, 0, jumMhs - 1);
-        data.Tampilposisi(cari, posisi);
-        data.TampilData (cari, posisi);
+
+        // posisi = data.FindBinarySearch(cari, 0, jumMhs - 1);
+        data.countSearchName(cari);
+        int posisi = data.FindBinarySearchByName(cari, 0, jumMhs - 1, 0);
+        data.TampilposisiNama(cari, posisi);
+        data.TampilDataNama (cari, posisi);
 
     }
 }
