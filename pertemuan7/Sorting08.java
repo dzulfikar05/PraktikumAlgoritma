@@ -1,7 +1,7 @@
 public class Sorting08 {
     public static void sequentialSearch(int[] arr, int key) {
         for (int i = 0; i < arr.length; i++) {
-            if (i == key) {
+            if (arr[i] == key) {
                 System.out.println("Data ditemukan pada indeks ke-" + i);
             }
         }
