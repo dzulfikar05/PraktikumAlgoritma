@@ -1,3 +1,7 @@
+package percobaan1;
+
+import percobaan2.Pakaian08;
+
 public class Stack08 {
     int data[];
     int size;

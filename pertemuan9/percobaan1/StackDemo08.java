@@ -1,3 +1,4 @@
+package percobaan1;
 import java.util.Stack;
 
 public class StackDemo08 {
