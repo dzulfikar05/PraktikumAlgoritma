@@ -71,4 +71,18 @@ public class Stack08 {
             System.out.println("Stack masih kosong");
         }
     }
+
+     public void getMax() {
+        double hargaMax =0;
+        int indexMax = -1;
+        for (int i = top; i >= 0; i--) {
+            if(data[i].harga > hargaMax ){
+                hargaMax = data[i].harga;
+                indexMax = i;
+            }
+        }
+        System.out.println(data[indexMax].jenis + " " + data[indexMax].warna + " " + data[indexMax].merk + " " + data[indexMax].ukuran + " "
+        + data[indexMax].harga + " ");
+        System.out.println();
+    }
 }

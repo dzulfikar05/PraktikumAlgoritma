@@ -20,8 +20,9 @@ public class StackMain08 {
             System.out.println("2. Pop");
             System.out.println("3. Peek");
             System.out.println("4. Print");
-            System.out.println("5. Keluar");
-            System.out.print("Pilih salah satu (1/2/3/4/5) : ");
+            System.out.println("5. GetMax");
+            System.out.println("6. Keluar");
+            System.out.print("Pilih salah satu (1/2/3/4/5/6) : ");
             pil = sc.nextInt();
             switch (pil) {
                 case 1:
@@ -37,6 +38,9 @@ public class StackMain08 {
                     stk.print();
                     break;
                 case 5:
+                    stk.getMax();
+                    break;
+                case 6:
                     return;
                 default:
                     System.out.println("Pilihan tidak tersedia. ");
