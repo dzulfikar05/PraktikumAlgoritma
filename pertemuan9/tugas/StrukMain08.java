@@ -2,8 +2,6 @@ package tugas;
 
 import java.util.Scanner;
 
-import percobaan2.Pakaian08;
-
 public class StrukMain08 {
     Scanner sc = new Scanner(System.in);
     
@@ -11,7 +9,6 @@ public class StrukMain08 {
         Scanner sc = new Scanner(System.in);
         Struk08 stk = new Struk08(20);
         StrukMain08 main = new StrukMain08();
-        // main.pushPakaian(stk);
 
         int pil;
         while (true) {
@@ -67,7 +64,6 @@ public class StrukMain08 {
 
             System.out.print("Apakah Anda akan menambahkan data baru ke stack (y/n) ? ");
             pilih = sc.next().charAt(0);
-            // Removed unnecessary nextLine()
             stk.push(d);
         } while (pilih == 'y');
     }
