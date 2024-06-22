@@ -1,0 +1,3 @@
+ab56c176a22e566b17d3cd66bca1e741c7036580e78806dc98d5848a94bc2e21
+Dzulfikar Muhammad Al Ghifari_SIB 1F_VTP	9	2024-06-14 14:49:32	1[o],2[o],3[o],4[o],5[o],6[o],7[o],8[o],9[o],10[x]3 5 4 7 9 10 15 8 6
+Dzulfikar Muhammad Al Ghifari_SIB 1F_VTP	9	2024-06-14 14:53:29	1[o],2[o],3[o],4[o],5[o],6[o],7[o],8[o],9[o],10[o]
