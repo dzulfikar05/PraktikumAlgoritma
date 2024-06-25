@@ -59,13 +59,13 @@ public class Main08 {
                     System.out.println("-------------------------------------------------------");
                     System.out.print("ID Menu   : ");
                     idItem = scanner.nextLine();
-                    RestaurantLL08 product = MenuList.get(idItem);
-                    if (product != null) {
+                    RestaurantLL08 menu = MenuList.get(idItem);
+                    if (menu != null) {
                         System.out.println("-------------------------------------------------------");
-                        System.out.println(product);
+                        System.out.println(menu);
                         System.out.println("-------------------------------------------------------");
                     } else {
-                        System.out.println("Product not found");
+                        System.out.println("Menu tidak ditemukan");
                     }
                     break;
                 case 4:
